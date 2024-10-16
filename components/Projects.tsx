@@ -47,6 +47,17 @@ const projectsData:project[] = [
         "Tailwind CSS",
       ],
     },
+    {
+      title: "WeatherWeb",
+      description:
+        "It is a platform that allows users to check their location's weather.",
+      link: "https://kuntal616.github.io/weatherWeb/",
+      code: "https://github.com/Kuntal616/weatherWeb",
+    //   previewVideo: "/videos/CloudSpacePreview.mp4",
+      technologies: [
+        "JavaScript", "HTML","CSS"
+      ],
+    },
   ];
 
 
