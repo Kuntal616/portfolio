@@ -15,7 +15,7 @@ const projectsData:project[] = [
       title: "Financefy",
       description:
         "Financefy is a platform that allows users to manage their income and expenses.",
-      link: "https://financefy-86d29.web.app/",
+      link: "https://financefy.vercel.app//",
       code: "https://github.com/Kuntal616/Financefy",
     //   previewVideo: "/videos/FormVibeProjectPreview.mp4",
       technologies: [

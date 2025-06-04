@@ -8,8 +8,7 @@ const skillsData:string[] = [
     "GitHub",
     "Node.js",
     "Express",
-    "Python",
-    "C++",
+    "MongoDB",
     "Java"
   ];
 
