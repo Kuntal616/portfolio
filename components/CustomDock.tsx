@@ -5,12 +5,11 @@ import {
   HomeIcon,
   MailIcon,
   Moon,
-  PencilIcon,
   Sun,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "@/components/ui/button";
+import {  buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
   Tooltip,
@@ -66,7 +65,7 @@ const Icons = {
       ></path>
     </svg>
   ),
-  resume: (props: IconProps) => (
+  resume: () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="18px"
@@ -126,9 +125,8 @@ export default function CustomDock({
 }) {
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  let isMobile: boolean;
-  let setIsMobile: any;
-  [isMobile, setIsMobile] = useState(false);
+
+  const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     setMounted(true);
     setIsMobile(window.innerWidth <= 768);
@@ -139,7 +137,7 @@ export default function CustomDock({
     return () => {
       window.removeEventListener("resize", handlerResize);
     };
-  }, []);
+  }, [setIsMobile]);
   return (
     <div
       className={
