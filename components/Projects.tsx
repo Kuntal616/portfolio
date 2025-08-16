@@ -11,6 +11,25 @@ technologies:string[];
 }
 
 const projectsData:project[] = [
+  {
+      title: "SnapURL",
+      description:
+        "It is a Web App for shortening URLs, optionally with custom aliases. In the dashboard you can check your links a snd usage statistics.",
+      link: "https://url-shortner-5mo4.onrender.com",
+      code: "https://github.com/Kuntal616/URL-shortner",
+    //   previewVideo: "/videos/CloudSpacePreview.mp4",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JavaScript",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Redux",
+        "TanStack Query"
+      ],
+    },
     {
       title: "Financefy",
       description:
