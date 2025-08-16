@@ -96,12 +96,12 @@ export default function Projects(){
                             <p className="text-sm text-gray-500">{item.description}</p>
                             <div className="flex gap-1 flex-wrap">
                                 {item.technologies.map((tech,index)=>(
-                                    <div key={index} className="flex border border-gray-200 dark:border-gray-800 bg-gray-200 rounded-md p-4 text-gray-800 px-2 py-1 text-sm">{tech}</div>
+                                    <div key={index} className="flex border border-gray-200 dark:border-gray-800 bg-gray-200 dark:bg-gray-500 rounded-md p-4 text-gray-800  dark:text-white px-2 py-1 text-sm">{tech}</div>
                                 ))}
                             </div>
                             <div className="flex gap-2 mt-2">
                                 <Link href={item.link}>
-                                <Button variant="default">View</Button>
+                                <Button variant="default" className="dark:bg-gray-500 dark:text-white dark:hover:bg-gray-600">View</Button>
                                 </Link>
                                 <Link href={item.code}>
                                 <Button variant="outline">Code</Button>
